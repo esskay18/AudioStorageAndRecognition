@@ -14,7 +14,6 @@ path = os.path.abspath(__file__)
 directory = os.path.split(path)[0]
 dbname = "pythonsqlite.db"
 database = os.path.join(directory, dbname)
-#database = "C:\\Users\\saura\\Desktop\\Notes\\Sem 3\\DBMS\\Project\\pythonsqlite.db"
 
 def SelectAudio(file):
     audioNumpy = AudioEncoding(file = file)

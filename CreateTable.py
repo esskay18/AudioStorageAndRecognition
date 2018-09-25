@@ -12,12 +12,10 @@ def CreateTable(conn, create_table_sql):
 path = os.path.abspath(__file__)
 directory = os.path.split(path)[0]
 dbname = "pythonsqlite.db"
-database = os.path.join(directory, dbname)        
-#database = "C:\\Users\\saura\\Desktop\\Notes\\Sem 3\\DBMS\\Project\\pythonsqlite.db"
+database = os.path.join(directory, dbname) 
 
 def main():
     music = '''CREATE TABLE IF NOT EXISTS music(id integer primary key, name text NOT NULL, artist text NOT NULL, audio blob, identified integer default 0);'''
-    #music = "alter table music add column identified integer default 0"
     conn = ConnectDB(database)
     if conn is not None:
         CreateTable(conn, music)
@@ -43,5 +41,4 @@ def ClearTable():
 
 if __name__=='__main__':
     main()
-    #ClearTable()
     

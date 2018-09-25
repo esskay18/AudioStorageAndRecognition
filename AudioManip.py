@@ -4,7 +4,6 @@ import numpy as np
 import sqlite3
 import io
 
-fileSrc = "C:\\Users\\saura\\Desktop\\Notes\\Sem 3\\DBMS\\Project\\Songs"
 
 def AudioEncoding(file = fileSrc):
     f,s = wavfile.read(file)

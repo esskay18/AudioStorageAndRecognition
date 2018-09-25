@@ -10,9 +10,7 @@ dbname = "pythonsqlite.db"
 songFolder = "Songs"
 
 database = os.path.join(directory, dbname)
-#database = "C:\\Users\\saura\\Desktop\\Notes\\Sem 3\\DBMS\\Project\\pythonsqlite.db"
 fileSrc = os.path.join(directory, songFolder)
-#fileSrc = "C:\\Users\\saura\\Desktop\\Notes\\Sem 3\\DBMS\\Project\\Songs"
 
 global artistName
 artistName = None
